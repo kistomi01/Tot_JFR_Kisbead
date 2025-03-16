@@ -12,18 +12,18 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name), glob('launch/*launch.[pxy][yma]*')), 
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='todo',
-    maintainer_email='todo@todo.com',
-    description='TODO: Package description',
+    maintainer='Tóth Tamás',
+    maintainer_email='tomika9868@gmail.com',
+    description='Package that makes turtlesim draw a square',
     license='GNU General Public License v3.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            # 'control_vehicle = TT_code.control_vehicle:main',
+            'square_node = TT_code.square_node:main',
         ],
     },
 )
