@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 from glob import glob
 import os
 
-package_name = 'TT_code'
+package_name = 'tt_code'
 
 setup(
     name=package_name,
@@ -23,7 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'square_node = TT_code.square_node:main',
+            'square_node = tt_code.square_node:main',
         ],
     },
 )

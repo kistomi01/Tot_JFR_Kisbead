@@ -1,4 +1,4 @@
-# `TT_code` package
+# `tt_code` package
 ROS 2 python package.  [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
 ## Packages and build
 
@@ -9,7 +9,7 @@ It is assumed that the workspace is `~/ros2_ws/`.
 cd ~/ros2_ws/src
 ```
 ``` r
-git clone https://github.com/sze-info/TT_code
+git clone https://github.com/sze-info/tt_code
 ```
 
 ### Build ROS 2 packages
@@ -17,7 +17,7 @@ git clone https://github.com/sze-info/TT_code
 cd ~/ros2_ws
 ```
 ``` r
-colcon build --packages-select TT_code --symlink-install
+colcon build --packages-select tt_code --symlink-install
 ```
 
 <details>
@@ -29,5 +29,5 @@ source ~/ros2_ws/install/setup.bash
 </details>
 
 ``` r
-ros2 launch TT_code launch_example1.launch.py
+ros2 launch tt_code launch_example1.launch.py
 ```
